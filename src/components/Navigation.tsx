@@ -37,6 +37,17 @@ export const Navigation = () => {
                         React Query
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                        to="/react-query-spring"
+                        style={({ isActive }) => ({
+                            fontWeight: isActive ? 'bold' : 'normal',
+                            textDecoration: isActive ? 'underline' : 'none',
+                        })}
+                    >
+                        React Query Spring
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );
