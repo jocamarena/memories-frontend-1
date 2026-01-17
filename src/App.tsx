@@ -5,6 +5,8 @@ import {ApodList} from './components/Apod/ApodList';
 import {ApodListAxios} from './components/Apod/ApodListAxios';
 import {ApodListReactQuery} from './components/Apod/ApodListReactQuery';
 import {ApodListReactQuerySpring} from "./components/Apod/ApodListReactQuerySpring.tsx";
+import {MemoryForm} from "./components/Memory/MemoryForm.tsx";
+import {Memories} from "./components/Memory/Memories.tsx";
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                 <Route path="/axios" element={<ApodListAxios/>}/>
                 <Route path="/react-query" element={<ApodListReactQuery/>}/>
                 <Route path="/react-query-spring" element={<ApodListReactQuerySpring/>}/>
+                <Route path="/memory-form" element={<MemoryForm/>}/>
+                <Route path="/memories" element={<Memories/>}/>
             </Routes>
         </>
     )

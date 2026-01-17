@@ -48,6 +48,17 @@ export const Navigation = () => {
                         React Query Spring
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                        to="/memory-form"
+                        style={({ isActive }) => ({
+                            fontWeight: isActive ? 'bold' : 'normal',
+                            textDecoration: isActive ? 'underline' : 'none',
+                        })}
+                    >
+                        Memory Form
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );
